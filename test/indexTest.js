@@ -175,7 +175,7 @@ describe("The payroll system", function () {
         updatedBpRecord = createTimeInEvent(cRecord, "0044-03-15 0900")
         updatedBpRecord = createTimeOutEvent(cRecord, "0044-03-15 1100")
         // 324 + 54
-        expect(allWagesFor(cRecord)).to.equal(378)
+        expect(allWagesFor(cRecord)).to.equal(648)
       })
     })
   })
@@ -315,7 +315,7 @@ describe("The payroll system", function () {
                 createTimeOutEvent(rec, timeOutStamp)
               })
             }) 
-            expect(calculatePayroll(employeeRecords)).to.eql(11880)
+            expect(calculatePayroll(employeeRecords)).to.eql(11775)
           })
         })
       })
